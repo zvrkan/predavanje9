@@ -1,0 +1,10 @@
+<?php
+
+// Hlace.php
+
+class Hlace extends Odjeca
+{
+    protected $nogavice;
+}
+
+?>
