@@ -1,0 +1,27 @@
+<?php
+
+// Duks.php
+
+class Duks extends Majca
+{
+    protected $kapuljaca;
+
+    function __construct()
+    {
+        parent::__construct();
+
+        $this->setKapuljaca();
+    }
+
+    function getKapuljaca()
+    {
+        return $this->kapuljaca;
+    }
+
+    function setKapuljaca()
+    {
+        $this->kapuljaca = readline("Kapuljaca: ");
+    }    
+}
+
+?>
