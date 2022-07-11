@@ -1,0 +1,27 @@
+<?php 
+
+// Majca.php
+
+class Majca extends Odjeca
+{
+    protected $rukavi;
+
+    function __construct()
+    {
+        parent::__construct();
+
+        $this->setRukavi();
+    }
+
+    function getRukavi()
+    {
+        return $this->rukavi;
+    }
+
+    function setRukavi()
+    {
+        $this->rukavi = readline("Rukavi: ");
+    }
+}
+
+?>
