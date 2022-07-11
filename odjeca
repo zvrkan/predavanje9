@@ -1,0 +1,52 @@
+<?php
+
+// Odjeca.php
+
+class Odjeca
+{
+    protected $proizvodjac;
+    protected $velicina;
+    protected $boja;
+    protected $kroj;
+    protected $materijal;
+    protected $cijena;
+
+    function __construct()
+    {
+        $this->setProizvodjac();
+        $this->setVelicina();
+        $this->setBoja();
+    }
+
+    function getProizvodjac()
+    {
+        return $this->proizvodjac;
+    }
+
+    function setProizvodjac()
+    {
+        $this->proizvodjac = readline("Proizvodjac: ");
+    }
+
+    function getVelicina()
+    {
+        return $this->velicina;
+    }
+
+    function setVelicina()
+    {
+        $this->velicina = readline("Velicina: ");
+    }  
+    
+    function getBoja()
+    {
+        return $this->boja;
+    }
+
+    function setBoja()
+    {
+        $this->boja = readline("Boja: ");
+    }    
+}
+
+?>
