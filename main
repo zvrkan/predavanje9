@@ -1,0 +1,19 @@
+<?php
+
+// main.php
+
+/*
+include("Odjeca.php");
+include("Majca.php");
+include("Duks.php");
+*/
+
+// Automatski include php datoteka s klasom
+spl_autoload_register(function($className){
+    $filename = $className . ".php";
+    include($filename);
+});
+
+$odjevni_predmet = new Duks();
+
+?>
